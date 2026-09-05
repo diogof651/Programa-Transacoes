@@ -2,6 +2,7 @@
 *.log
 *.vbw
 *.user
+*.docx
 
 **/bin/
 **/obj/
