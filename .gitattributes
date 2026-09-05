@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
+# Preserve VB6 project files exactly as saved by the IDE.
+*.bas -text
+*.cls -text
+*.ctl -text
+*.ctx -text
+*.dsr -text
+*.dca -text
+*.frm -text
+*.frx -text
+*.vbp -text
+*.vbw -text
+
 * text=auto

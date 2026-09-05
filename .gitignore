@@ -1,0 +1,7 @@
+.codex-snapshot-*/
+*.log
+*.vbw
+
+**/bin/
+**/obj/
+**/.vs/
