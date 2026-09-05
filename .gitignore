@@ -1,6 +1,7 @@
 .codex-snapshot-*/
 *.log
 *.vbw
+*.user
 
 **/bin/
 **/obj/
