@@ -35,6 +35,7 @@ Module=Module1; Biblioteca.bas
 Form=frmTransacoes.frm
 Form=frmConTransacoes.frm
 Startup="frmPrincipal"
+ExeName32="XYZ Administradora.exe"
 Command32=""
 Name="Project1"
 HelpContextID="0"

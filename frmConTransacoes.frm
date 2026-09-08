@@ -7,6 +7,7 @@ Begin VB.Form frmConTransacoes
    ClientLeft      =   45
    ClientTop       =   345
    ClientWidth     =   11520
+   Icon            =   "frmConTransacoes.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True
@@ -146,26 +147,80 @@ Begin VB.Form frmConTransacoes
       BeginProperty Column00 
          DataField       =   "Id_Transacao"
          Caption         =   "Código"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
       BeginProperty Column01 
          DataField       =   "Numero_Cartao"
          Caption         =   "Cartão"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
       BeginProperty Column02 
          DataField       =   "Data_Transacao"
          Caption         =   "Data/Hora"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
       BeginProperty Column03 
          DataField       =   "Valor_Transacao"
          Caption         =   "Valor"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
       BeginProperty Column04 
          DataField       =   "Status_Transacao"
          Caption         =   "Status"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
       BeginProperty Column05 
          DataField       =   "Descricao"
          Caption         =   "Descrição"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
       SplitCount      =   1
       BeginProperty Split0 
@@ -241,15 +296,14 @@ Begin VB.Form frmConTransacoes
       Caption         =   "Número Cartão"
       Height          =   255
       Left            =   180
-      TabIndex        =   12
+      TabIndex        =   19
       Top             =   360
       Width           =   1395
    End
    Begin VB.Label lblContador 
-      Caption         =   ""
       Height          =   255
       Left            =   4140
-      TabIndex        =   11
+      TabIndex        =   20
       Top             =   5790
       Width           =   2775
    End

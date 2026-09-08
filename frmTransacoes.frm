@@ -5,11 +5,12 @@ Begin VB.Form frmTransacoes
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   7905
+   Icon            =   "frmTransacoes.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    ScaleHeight     =   3165
    ScaleWidth      =   7905
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   1  'CenterOwner
    Begin VB.PictureBox picDados 
       Height          =   2415
       Left            =   0
