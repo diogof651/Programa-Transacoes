@@ -29,6 +29,7 @@ Partial Class Form1
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.lblPeriodo = New System.Windows.Forms.Label()
         Me.lblArquivo = New System.Windows.Forms.Label()
@@ -49,7 +50,7 @@ Partial Class Form1
         Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.Location = New System.Drawing.Point(18, 18)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(277, 20)
+        Me.lblTitulo.Size = New System.Drawing.Size(271, 20)
         Me.lblTitulo.TabIndex = 0
         Me.lblTitulo.Text = "Exportação de Transações Excel"
         '
@@ -58,50 +59,16 @@ Partial Class Form1
         Me.lblPeriodo.AutoSize = True
         Me.lblPeriodo.Location = New System.Drawing.Point(20, 56)
         Me.lblPeriodo.Name = "lblPeriodo"
-        Me.lblPeriodo.Size = New System.Drawing.Size(104, 13)
+        Me.lblPeriodo.Size = New System.Drawing.Size(45, 13)
         Me.lblPeriodo.TabIndex = 1
         Me.lblPeriodo.Text = "Período"
-        '
-        'lblDataInicial
-        '
-        Me.lblDataInicial.AutoSize = True
-        Me.lblDataInicial.Location = New System.Drawing.Point(20, 88)
-        Me.lblDataInicial.Name = "lblDataInicial"
-        Me.lblDataInicial.Size = New System.Drawing.Size(60, 13)
-        Me.lblDataInicial.TabIndex = 2
-        Me.lblDataInicial.Text = "Data inicial"
-        '
-        'dtpDataInicial
-        '
-        Me.dtpDataInicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDataInicial.Location = New System.Drawing.Point(23, 106)
-        Me.dtpDataInicial.Name = "dtpDataInicial"
-        Me.dtpDataInicial.Size = New System.Drawing.Size(128, 20)
-        Me.dtpDataInicial.TabIndex = 3
-        '
-        'lblDataFinal
-        '
-        Me.lblDataFinal.AutoSize = True
-        Me.lblDataFinal.Location = New System.Drawing.Point(177, 88)
-        Me.lblDataFinal.Name = "lblDataFinal"
-        Me.lblDataFinal.Size = New System.Drawing.Size(52, 13)
-        Me.lblDataFinal.TabIndex = 4
-        Me.lblDataFinal.Text = "Data final"
-        '
-        'dtpDataFinal
-        '
-        Me.dtpDataFinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDataFinal.Location = New System.Drawing.Point(180, 106)
-        Me.dtpDataFinal.Name = "dtpDataFinal"
-        Me.dtpDataFinal.Size = New System.Drawing.Size(128, 20)
-        Me.dtpDataFinal.TabIndex = 5
         '
         'lblArquivo
         '
         Me.lblArquivo.AutoSize = True
         Me.lblArquivo.Location = New System.Drawing.Point(20, 150)
         Me.lblArquivo.Name = "lblArquivo"
-        Me.lblArquivo.Size = New System.Drawing.Size(46, 13)
+        Me.lblArquivo.Size = New System.Drawing.Size(43, 13)
         Me.lblArquivo.TabIndex = 6
         Me.lblArquivo.Text = "Arquivo"
         '
@@ -144,9 +111,43 @@ Partial Class Form1
         Me.lblStatus.AutoSize = True
         Me.lblStatus.Location = New System.Drawing.Point(20, 231)
         Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(40, 13)
+        Me.lblStatus.Size = New System.Drawing.Size(37, 13)
         Me.lblStatus.TabIndex = 11
         Me.lblStatus.Text = "Status"
+        '
+        'lblDataInicial
+        '
+        Me.lblDataInicial.AutoSize = True
+        Me.lblDataInicial.Location = New System.Drawing.Point(20, 88)
+        Me.lblDataInicial.Name = "lblDataInicial"
+        Me.lblDataInicial.Size = New System.Drawing.Size(59, 13)
+        Me.lblDataInicial.TabIndex = 2
+        Me.lblDataInicial.Text = "Data inicial"
+        '
+        'dtpDataInicial
+        '
+        Me.dtpDataInicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpDataInicial.Location = New System.Drawing.Point(23, 106)
+        Me.dtpDataInicial.Name = "dtpDataInicial"
+        Me.dtpDataInicial.Size = New System.Drawing.Size(128, 20)
+        Me.dtpDataInicial.TabIndex = 3
+        '
+        'lblDataFinal
+        '
+        Me.lblDataFinal.AutoSize = True
+        Me.lblDataFinal.Location = New System.Drawing.Point(177, 88)
+        Me.lblDataFinal.Name = "lblDataFinal"
+        Me.lblDataFinal.Size = New System.Drawing.Size(52, 13)
+        Me.lblDataFinal.TabIndex = 4
+        Me.lblDataFinal.Text = "Data final"
+        '
+        'dtpDataFinal
+        '
+        Me.dtpDataFinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpDataFinal.Location = New System.Drawing.Point(180, 106)
+        Me.dtpDataFinal.Name = "dtpDataFinal"
+        Me.dtpDataFinal.Size = New System.Drawing.Size(128, 20)
+        Me.dtpDataFinal.TabIndex = 5
         '
         'Form1
         '
@@ -166,6 +167,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblPeriodo)
         Me.Controls.Add(Me.lblTitulo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "Form1"
@@ -173,5 +175,6 @@ Partial Class Form1
         Me.Text = "XYZCartoes - Exportação Excel"
         Me.ResumeLayout(False)
         Me.PerformLayout()
+
     End Sub
 End Class
